@@ -1,0 +1,1453 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <link rel="canonical" href="https://madstudioroblox.github.io/ProfileService/api/">
+      
+      
+      <link rel="shortcut icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.8">
+    
+    
+      
+        <title>API - ProfileService</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.01afc2df.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.83bccb1f.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#7e56c2">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#profileservice" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://madstudioroblox.github.io/ProfileService" title="ProfileService" class="md-header-nav__button md-logo" aria-label="ProfileService">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            ProfileService
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              API
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/MadStudioRoblox/ProfileService/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MadStudioRoblox/ProfileService
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://madstudioroblox.github.io/ProfileService" title="ProfileService" class="md-nav__button md-logo" aria-label="ProfileService">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4z"/></svg>
+
+    </a>
+    ProfileService
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/MadStudioRoblox/ProfileService/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MadStudioRoblox/ProfileService
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Tutorial
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorial" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Tutorial
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorial/settingup/" title="Setting up" class="md-nav__link">
+      Setting up
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorial/basic_usage/" title="Basic Usage" class="md-nav__link">
+      Basic Usage
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        API
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="API" class="md-nav__link md-nav__link--active">
+      API
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#profileservice" class="md-nav__link">
+    ProfileService
+  </a>
+  
+    <nav class="md-nav" aria-label="ProfileService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profileserviceservicelocked" class="md-nav__link">
+    ProfileService.ServiceLocked
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileserviceissuesignal" class="md-nav__link">
+    ProfileService.IssueSignal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileservicecorruptionsignal" class="md-nav__link">
+    ProfileService.CorruptionSignal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileservicecriticalstatesignal" class="md-nav__link">
+    ProfileService.CriticalStateSignal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileservicegetprofilestore" class="md-nav__link">
+    ProfileService.GetProfileStore()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profilestore" class="md-nav__link">
+    ProfileStore
+  </a>
+  
+    <nav class="md-nav" aria-label="ProfileStore">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profilestoreloadprofileasync" class="md-nav__link">
+    ProfileStore:LoadProfileAsync()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilestoreglobalupdateprofileasync" class="md-nav__link">
+    ProfileStore:GlobalUpdateProfileAsync()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilestoreviewprofileasync" class="md-nav__link">
+    ProfileStore:ViewProfileAsync()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilestorewipeprofileasync" class="md-nav__link">
+    ProfileStore:WipeProfileAsync()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilestoremock" class="md-nav__link">
+    ProfileStore.Mock
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profile" class="md-nav__link">
+    Profile
+  </a>
+  
+    <nav class="md-nav" aria-label="Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profiledata" class="md-nav__link">
+    Profile.Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilemetadata" class="md-nav__link">
+    Profile.MetaData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileglobalupdates" class="md-nav__link">
+    Profile.GlobalUpdates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileisactive" class="md-nav__link">
+    Profile:IsActive()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilegetmetatag" class="md-nav__link">
+    Profile:GetMetaTag()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilelistentorelease" class="md-nav__link">
+    Profile:ListenToRelease()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilerelease" class="md-nav__link">
+    Profile:Release()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilesetmetatag" class="md-nav__link">
+    Profile:SetMetaTag()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilesave" class="md-nav__link">
+    Profile:Save()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-updates" class="md-nav__link">
+    Global Updates
+  </a>
+  
+    <nav class="md-nav" aria-label="Global Updates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#always-available" class="md-nav__link">
+    Always available
+  </a>
+  
+    <nav class="md-nav" aria-label="Always available">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#globalupdatesgetactiveupdates" class="md-nav__link">
+    GlobalUpdates:GetActiveUpdates()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalupdatesgetlockedupdates" class="md-nav__link">
+    GlobalUpdates:GetLockedUpdates()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#only-when-accessed-from-profileglobalupdates" class="md-nav__link">
+    Only when accessed from Profile.GlobalUpdates
+  </a>
+  
+    <nav class="md-nav" aria-label="Only when accessed from Profile.GlobalUpdates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#globalupdateslistentonewactiveupdate" class="md-nav__link">
+    GlobalUpdates:ListenToNewActiveUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalupdateslistentonewlockedupdate" class="md-nav__link">
+    GlobalUpdates:ListenToNewLockedUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalupdateslockactiveupdate" class="md-nav__link">
+    GlobalUpdates:LockActiveUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalupdatesclearlockedupdate" class="md-nav__link">
+    GlobalUpdates:ClearLockedUpdate()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#available-inside-update_handler-during-a-profilestoreglobalupdateprofileasync-call" class="md-nav__link">
+    Available inside update_handler during a ProfileStore:GlobalUpdateProfileAsync() call
+  </a>
+  
+    <nav class="md-nav" aria-label="Available inside update_handler during a ProfileStore:GlobalUpdateProfileAsync() call">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#globalupdatesaddactiveupdate" class="md-nav__link">
+    GlobalUpdates:AddActiveUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalupdateschangeactiveupdate" class="md-nav__link">
+    GlobalUpdates:ChangeActiveUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalupdatesclearactiveupdate" class="md-nav__link">
+    GlobalUpdates:ClearActiveUpdate()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#profileservice" class="md-nav__link">
+    ProfileService
+  </a>
+  
+    <nav class="md-nav" aria-label="ProfileService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profileserviceservicelocked" class="md-nav__link">
+    ProfileService.ServiceLocked
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileserviceissuesignal" class="md-nav__link">
+    ProfileService.IssueSignal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileservicecorruptionsignal" class="md-nav__link">
+    ProfileService.CorruptionSignal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileservicecriticalstatesignal" class="md-nav__link">
+    ProfileService.CriticalStateSignal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileservicegetprofilestore" class="md-nav__link">
+    ProfileService.GetProfileStore()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profilestore" class="md-nav__link">
+    ProfileStore
+  </a>
+  
+    <nav class="md-nav" aria-label="ProfileStore">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profilestoreloadprofileasync" class="md-nav__link">
+    ProfileStore:LoadProfileAsync()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilestoreglobalupdateprofileasync" class="md-nav__link">
+    ProfileStore:GlobalUpdateProfileAsync()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilestoreviewprofileasync" class="md-nav__link">
+    ProfileStore:ViewProfileAsync()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilestorewipeprofileasync" class="md-nav__link">
+    ProfileStore:WipeProfileAsync()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilestoremock" class="md-nav__link">
+    ProfileStore.Mock
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profile" class="md-nav__link">
+    Profile
+  </a>
+  
+    <nav class="md-nav" aria-label="Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profiledata" class="md-nav__link">
+    Profile.Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilemetadata" class="md-nav__link">
+    Profile.MetaData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileglobalupdates" class="md-nav__link">
+    Profile.GlobalUpdates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileisactive" class="md-nav__link">
+    Profile:IsActive()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilegetmetatag" class="md-nav__link">
+    Profile:GetMetaTag()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilelistentorelease" class="md-nav__link">
+    Profile:ListenToRelease()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilerelease" class="md-nav__link">
+    Profile:Release()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilesetmetatag" class="md-nav__link">
+    Profile:SetMetaTag()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profilesave" class="md-nav__link">
+    Profile:Save()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-updates" class="md-nav__link">
+    Global Updates
+  </a>
+  
+    <nav class="md-nav" aria-label="Global Updates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#always-available" class="md-nav__link">
+    Always available
+  </a>
+  
+    <nav class="md-nav" aria-label="Always available">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#globalupdatesgetactiveupdates" class="md-nav__link">
+    GlobalUpdates:GetActiveUpdates()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalupdatesgetlockedupdates" class="md-nav__link">
+    GlobalUpdates:GetLockedUpdates()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#only-when-accessed-from-profileglobalupdates" class="md-nav__link">
+    Only when accessed from Profile.GlobalUpdates
+  </a>
+  
+    <nav class="md-nav" aria-label="Only when accessed from Profile.GlobalUpdates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#globalupdateslistentonewactiveupdate" class="md-nav__link">
+    GlobalUpdates:ListenToNewActiveUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalupdateslistentonewlockedupdate" class="md-nav__link">
+    GlobalUpdates:ListenToNewLockedUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalupdateslockactiveupdate" class="md-nav__link">
+    GlobalUpdates:LockActiveUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalupdatesclearlockedupdate" class="md-nav__link">
+    GlobalUpdates:ClearLockedUpdate()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#available-inside-update_handler-during-a-profilestoreglobalupdateprofileasync-call" class="md-nav__link">
+    Available inside update_handler during a ProfileStore:GlobalUpdateProfileAsync() call
+  </a>
+  
+    <nav class="md-nav" aria-label="Available inside update_handler during a ProfileStore:GlobalUpdateProfileAsync() call">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#globalupdatesaddactiveupdate" class="md-nav__link">
+    GlobalUpdates:AddActiveUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalupdateschangeactiveupdate" class="md-nav__link">
+    GlobalUpdates:ChangeActiveUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalupdatesclearactiveupdate" class="md-nav__link">
+    GlobalUpdates:ClearActiveUpdate()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/MadStudioRoblox/ProfileService/edit/master/docs/api.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                  <h1>API</h1>
+                
+                <div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Never yield (use <code>wait()</code> or asynchronous Roblox API calls) inside listener functions</p>
+</div>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p>Methods with <code>Async</code> in their name are methods that will yield - just like <code>wait()</code></p>
+</div>
+<h2 id="profileservice">ProfileService</h2>
+<h3 id="profileserviceservicelocked">ProfileService.ServiceLocked</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">ProfileService</span><span class="p">.</span><span class="n">ServiceLocked</span>   <span class="p">[</span><span class="n">bool</span><span class="p">]</span>
+</code></pre></div>
+
+
+<p>Set to false when the Roblox server is shutting down.
+<code>ProfileStore</code> methods should not be called after this value is set to <code>false</code></p>
+<h3 id="profileserviceissuesignal">ProfileService.IssueSignal</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">ProfileService</span><span class="p">.</span><span class="n">IssueSignal</span>   <span class="p">[</span><span class="n">ScriptSignal</span><span class="p">](</span><span class="n">error_message</span> <span class="p">[</span><span class="n">string</span><span class="p">])</span>
+</code></pre></div>
+
+
+<p>Analytics endpoint for DataStore error logging. Example usage:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">ProfileService</span><span class="p">.</span><span class="n">IssueSignal</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">error_message</span><span class="p">)</span>
+  <span class="nb">pcall</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
+    <span class="n">AnalyticsService</span><span class="p">:</span><span class="n">FireEvent</span><span class="p">(</span><span class="s2">&quot;ProfileServiceIssue&quot;</span><span class="p">,</span> <span class="n">error_message</span><span class="p">)</span>
+  <span class="kr">end</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+</code></pre></div>
+
+
+<h3 id="profileservicecorruptionsignal">ProfileService.CorruptionSignal</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">ProfileService</span><span class="p">.</span><span class="n">CorruptionSignal</span>   <span class="p">[</span><span class="n">ScriptSignal</span><span class="p">](</span><span class="n">profile_store_name</span> <span class="p">[</span><span class="n">string</span><span class="p">],</span> <span class="n">profile_key</span> <span class="p">[</span><span class="n">string</span><span class="p">])</span>
+</code></pre></div>
+
+
+<p>Analytics endpoint for cases when a DataStore key returns a value that has all or some
+of it's profile components set to invalid data types. E.g., accidentally setting
+Profile.Data to a non table value</p>
+<h3 id="profileservicecriticalstatesignal">ProfileService.CriticalStateSignal</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">ProfileService</span><span class="p">.</span><span class="n">CriticalStateSignal</span>   <span class="p">[</span><span class="n">ScriptSignal</span><span class="p">]</span> <span class="p">(</span><span class="n">is_critical_state</span> <span class="p">[</span><span class="n">bool</span><span class="p">])</span>
+</code></pre></div>
+
+
+<p>Analytics endpoint for cases when DataStore is throwing too many errors and it's most
+likely affecting your game really really bad - this could be due to developer errors
+or due to Roblox server problems. Could be used to alert players about data store outages.</p>
+<h3 id="profileservicegetprofilestore">ProfileService.GetProfileStore()</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">ProfileService</span><span class="p">.</span><span class="n">GetProfileStore</span><span class="p">(</span>
+    <span class="n">profile_store_name</span><span class="p">,</span>
+    <span class="n">profile_template</span>
+<span class="p">)</span> <span class="c1">--&gt; [ProfileStore]</span>
+<span class="c1">-- profile_store_name   [string] -- DataStore name</span>
+<span class="c1">-- profile_template     [table] -- Profile.Data will default to</span>
+<span class="c1">--   given table (deep-copy) when no data was saved previously</span>
+</code></pre></div>
+
+
+<p><code>ProfileStore</code> objects expose methods for loading / viewing profiles and sending global updates. Equivalent of <a href="https://developer.roblox.com/en-us/api-reference/function/DataStoreService/GetDataStore">:GetDataStore()</a> in Roblox <a href="https://developer.roblox.com/en-us/api-reference/class/DataStoreService">DataStoreService</a> API.</p>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p><code>profile_template</code> is only copied for <code>Profile.Data</code> for new profiles. Changes made to <code>profile_template</code> will
+not fill in missing components in profiles that have been saved before changing <code>profile_template</code>.
+You may create your own function to fill in the missing components in <code>Profile.Data</code> as soon as it is
+loaded or have <code>nil</code> exceptions in your personal <code>:Get()</code> and <code>:Set()</code> method libraries.</p>
+</div>
+<h2 id="profilestore">ProfileStore</h2>
+<h3 id="profilestoreloadprofileasync">ProfileStore:LoadProfileAsync()</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">ProfileStore</span><span class="p">:</span><span class="n">LoadProfileAsync</span><span class="p">(</span>
+  <span class="n">profile_key</span><span class="p">,</span>
+  <span class="n">not_released_handler</span>
+<span class="p">)</span> <span class="c1">--&gt; [Profile] or nil</span>
+<span class="c1">-- profile_key            [string] -- DataStore key</span>
+<span class="c1">-- not_released_handler:</span>
+<span class="c1">--    &quot;ForceLoad&quot;</span>
+<span class="c1">--    or</span>
+<span class="c1">--    &quot;Steal&quot;</span>
+<span class="c1">--    or</span>
+<span class="c1">--    [function](place_id, game_job_id)</span>
+</code></pre></div>
+
+
+<p>For basic usage, pass <code>"ForceLoad"</code> for the <code>not_released_handler</code> argument.</p>
+<p><code>not_released_handler</code> as a <code>function</code> argument is called when the profile is
+session-locked by a remote Roblox server:</p>
+<div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">profile</span> <span class="o">=</span> <span class="n">ProfileStore</span><span class="p">:</span><span class="n">LoadProfileAsync</span><span class="p">(</span>
+  <span class="s2">&quot;Player_2312310&quot;</span><span class="p">,</span>
+  <span class="kr">function</span><span class="p">(</span><span class="n">place_id</span><span class="p">,</span> <span class="n">game_job_id</span><span class="p">)</span>
+    <span class="c1">-- place_id and game_job_id identify the Roblox server that has</span>
+    <span class="c1">--   this profile currently locked. In rare cases, if the server</span>
+    <span class="c1">--   crashes, the profile will stay locked until ForceLoaded by</span>
+    <span class="c1">--   a new session.</span>
+    <span class="kr">return</span> <span class="s2">&quot;Repeat&quot;</span> <span class="ow">or</span> <span class="s2">&quot;Cancel&quot;</span> <span class="ow">or</span> <span class="s2">&quot;ForceLoad&quot;</span> <span class="ow">or</span> <span class="s2">&quot;Steal&quot;</span>
+  <span class="kr">end</span>
+<span class="p">)</span>
+</code></pre></div>
+
+
+<p><code>not_released_handler</code> must return one of the three values:</p>
+<ul>
+<li><code>return "Repeat"</code> - ProfileService will repeat the profile loading proccess and
+may call the release handler again</li>
+<li><code>return "Cancel"</code> - <code>:LoadProfileAsync()</code> will immediately return nil</li>
+<li><code>return "ForceLoad"</code> - ProfileService will indefinetly attempt to load the profile.
+If the profile is session-locked by a remote Roblox server, it will either be released
+for that remote server or "stolen" (Stealing is nescessary for remote servers that are not
+responding in time and for handling crashed server session-locks).</li>
+<li><code>return "Steal"</code> - The profile will usually be loaded immediately, ignoring an existing remote session lock and applying a session lock for this session. <code>"Steal"</code> can be used to clear dead session locks faster than <code>"ForceLoad"</code> assuming your code knows that the session lock is dead.</li>
+</ul>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p>ProfileService saves profiles to live DataStore keys in Roblox Studio when <a href="https://developer.roblox.com/en-us/articles/Data-store#using-data-stores-in-studio">Roblox API services are enabled</a>. See <a href="#profilestoremock">ProfileStore.Mock</a> if saving to live keys during testing is not desired.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><code>:LoadProfileAsync()</code> can return <code>nil</code> when another remote Roblox server attempts to load the profile at the same time.
+This case should be extremely rare and it would be recommended to <a href="https://developer.roblox.com/en-us/api-reference/function/Player/Kick">:Kick()</a> the player if <code>:LoadProfileAsync()</code> does
+not return a <code>Profile</code> object.</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Do not load a profile of the same key again before it is released</p>
+<p>Trying to load a profile that has already been session-locked on the same server will result in an error. You may, however, instantly load the profile again after releasing it with <code>Profile:Release()</code>.</p>
+</div>
+<h3 id="profilestoreglobalupdateprofileasync">ProfileStore:GlobalUpdateProfileAsync()</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">ProfileStore</span><span class="p">:</span><span class="n">GlobalUpdateProfileAsync</span><span class="p">(</span>
+  <span class="n">profile_key</span><span class="p">,</span>
+  <span class="n">update_handler</span>
+<span class="p">)</span> <span class="c1">--&gt; [GlobalUpdates] or nil</span>
+<span class="c1">-- profile_key      [string] -- DataStore key</span>
+<span class="c1">-- update_handler   [function](global_updates) -- This function is</span>
+<span class="c1">--   called with a GlobalUpdates object</span>
+</code></pre></div>
+
+
+<p>Used to create and manage <code>Active</code> global updates for a specified <code>Profile</code>. Can be called on any Roblox server of your game.
+Updates should reach the recipient in less than 30 seconds, regardless of whether it was called on the same server the <code>Profile</code> is session-locked to. See <a href="#global-updates">Global Updates</a> for more information.</p>
+<p>Example usage of <code>:GlobalUpdateProfileAsync()</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">ProfileStore</span><span class="p">:</span><span class="n">GlobalUpdateProfileAsync</span><span class="p">(</span>
+  <span class="s2">&quot;Player_2312310&quot;</span><span class="p">,</span>
+  <span class="kr">function</span><span class="p">(</span><span class="n">global_updates</span><span class="p">)</span>
+    <span class="n">global_updates</span><span class="p">:</span><span class="n">AddActiveUpdate</span><span class="p">({</span>
+      <span class="n">Type</span> <span class="o">=</span> <span class="s2">&quot;AdminGift&quot;</span><span class="p">,</span>
+      <span class="n">Item</span> <span class="o">=</span> <span class="s2">&quot;Coins&quot;</span><span class="p">,</span>
+      <span class="n">Amount</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span>
+    <span class="p">})</span>
+  <span class="kr">end</span>
+<span class="p">)</span>
+</code></pre></div>
+
+
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p><code>:GlobalUpdateProfileAsync()</code> will work for profiles that haven't been created (profiles are created when they're
+loaded using <code>:LoadProfileAsync()</code> for the first time)</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Yielding inside the <code>update_handler</code> function will throw an error</p>
+</div>
+<h3 id="profilestoreviewprofileasync">ProfileStore:ViewProfileAsync()</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">ProfileStore</span><span class="p">:</span><span class="n">ViewProfileAsync</span><span class="p">(</span><span class="n">profile_key</span><span class="p">)</span> <span class="c1">--&gt; [Profile] or nil</span>
+<span class="c1">-- profile_key   [string] -- DataStore key</span>
+</code></pre></div>
+
+
+<p>Writing and saving is not possible for profiles in view mode. <code>Profile.Data</code> and <code>Profile.MetaData</code> will be <code>nil</code>
+if the profile hasn't been created.</p>
+<h3 id="profilestorewipeprofileasync">ProfileStore:WipeProfileAsync()</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">ProfileStore</span><span class="p">:</span><span class="n">WipeProfileAsync</span><span class="p">(</span><span class="n">profile_key</span><span class="p">)</span> <span class="c1">--&gt; is_wipe_successful [bool]</span>
+<span class="c1">-- profile_key   [string] -- DataStore key</span>
+</code></pre></div>
+
+
+<p>Use <code>:WipeProfileAsync()</code> to erase user data when complying with right of erasure requests. In live Roblox servers <code>:WipeProfileAsync()</code> must be used on profiles created through <code>ProfileStore.Mock</code> after <code>Profile:Release()</code> and it's known that the <code>Profile</code> will no longer be loaded again.</p>
+<h3 id="profilestoremock">ProfileStore.Mock</h3>
+<div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">ProfileTemplate</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="kd">local</span> <span class="n">GameProfileStore</span> <span class="o">=</span> <span class="n">ProfileService</span><span class="p">.</span><span class="n">GetProfileStore</span><span class="p">(</span>
+  <span class="s2">&quot;PlayerData&quot;</span><span class="p">,</span>
+  <span class="n">ProfileTemplate</span>
+<span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">LiveProfile</span> <span class="o">=</span> <span class="n">GameProfileStore</span><span class="p">:</span><span class="n">LoadProfileAsync</span><span class="p">(</span>
+  <span class="s2">&quot;profile_key&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;ForceLoad&quot;</span>
+<span class="p">)</span>
+<span class="kd">local</span> <span class="n">MockProfile</span> <span class="o">=</span> <span class="n">GameProfileStore</span><span class="p">.</span><span class="n">Mock</span><span class="p">:</span><span class="n">LoadProfileAsync</span><span class="p">(</span>
+  <span class="s2">&quot;profile_key&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;ForceLoad&quot;</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">LiveProfile</span> <span class="o">~=</span> <span class="n">MockProfile</span><span class="p">)</span> <span class="c1">--&gt; true</span>
+
+<span class="c1">-- When done using mock profile on live servers: (Prevent memory leak)</span>
+<span class="n">MockProfile</span><span class="p">:</span><span class="n">Release</span><span class="p">()</span>
+<span class="n">GameProfileStore</span><span class="p">.</span><span class="n">Mock</span><span class="p">:</span><span class="n">WipeProfile</span><span class="p">(</span><span class="s2">&quot;profile_key&quot;</span><span class="p">)</span>
+<span class="c1">-- You don&#39;t really have to wipe mock profiles in studio testing</span>
+</code></pre></div>
+
+
+<p><code>ProfileStore.Mock</code> is a reflection of methods available in the <code>ProfileStore</code> object with the exception of profile operations
+being performed
+on profiles stored on a separate, detached "fake" DataStore that will be forgotten when the game session ends. You may load profiles
+of the same key from <code>ProfileStore</code> and <code>ProfileStore.Mock</code> in parallel - these will be two different profiles because the regular and mock versions of the same <code>ProfileStore</code> are completely isolated from each other.</p>
+<p><code>ProfileStore.Mock</code> is useful for customizing your testing environment in cases when you want to <a href="https://developer.roblox.com/en-us/articles/Data-store#using-data-stores-in-studio">enable Roblox API services</a> in studio, but don't want ProfileService to save to live keys:</p>
+<div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">RunService</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;RunService&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">GameProfileStore</span> <span class="o">=</span> <span class="n">ProfileService</span><span class="p">.</span><span class="n">GetProfileStore</span><span class="p">(</span><span class="s2">&quot;PlayerData&quot;</span><span class="p">,</span> <span class="n">ProfileTemplate</span><span class="p">)</span>
+<span class="kr">if</span> <span class="n">RunService</span><span class="p">:</span><span class="n">IsStudio</span><span class="p">()</span> <span class="o">==</span> <span class="kc">true</span> <span class="kr">then</span>
+  <span class="n">GameProfileStore</span> <span class="o">=</span> <span class="n">GameProfileStore</span><span class="p">.</span><span class="n">Mock</span>
+<span class="kr">end</span>
+</code></pre></div>
+
+
+<p>A few more things:</p>
+<ul>
+<li>Even when Roblox API services are disabled, <code>ProfileStore</code> and <code>ProfileStore.Mock</code> will store profiles in separate stores.</li>
+<li>It's better to think of <code>ProfileStore</code> and <code>ProfileStore.Mock</code> as two different <code>ProfileStore</code> objects unrelated to each
+other in any way.</li>
+<li>It's possible to create a project that utilizes both live and mock profiles on live servers!</li>
+</ul>
+<h2 id="profile">Profile</h2>
+<h3 id="profiledata">Profile.Data</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">Profile</span><span class="p">.</span><span class="n">Data</span>   <span class="p">[</span><span class="n">table</span><span class="p">]</span>
+</code></pre></div>
+
+
+<p><code>Profile.Data</code> is the primary variable of a Profile object. The developer is free to read and write from
+the table while it is automatically saved to the <a href="https://developer.roblox.com/en-us/api-reference/class/DataStoreService">DataStore</a>.
+<code>Profile.Data</code> will no longer be saved after being released remotely or locally via <code>Profile:Release()</code>.</p>
+<h3 id="profilemetadata">Profile.MetaData</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">Profile</span><span class="p">.</span><span class="n">MetaData</span> <span class="p">[</span><span class="n">table</span><span class="p">]</span> <span class="p">(</span><span class="n">Read</span><span class="o">-</span><span class="n">only</span><span class="p">)</span> <span class="c1">-- Data about the profile itself</span>
+
+<span class="n">Profile</span><span class="p">.</span><span class="n">MetaData</span><span class="p">.</span><span class="n">ProfileCreateTime</span> <span class="p">[</span><span class="n">number</span><span class="p">]</span> <span class="p">(</span><span class="n">Read</span><span class="o">-</span><span class="n">only</span><span class="p">)</span>
+<span class="c1">-- os.time() timestamp of profile creation</span>
+
+<span class="n">Profile</span><span class="p">.</span><span class="n">MetaData</span><span class="p">.</span><span class="n">SessionLoadCount</span> <span class="p">[</span><span class="n">number</span><span class="p">]</span> <span class="p">(</span><span class="n">Read</span><span class="o">-</span><span class="n">only</span><span class="p">)</span>
+<span class="c1">-- Amount of times the profile was loaded</span>
+
+<span class="n">Profile</span><span class="p">.</span><span class="n">MetaData</span><span class="p">.</span><span class="n">ActiveSession</span> <span class="p">[</span><span class="n">table</span><span class="p">]</span> <span class="ow">or</span> <span class="kc">nil</span> <span class="p">(</span><span class="n">Read</span><span class="o">-</span><span class="n">only</span><span class="p">)</span>
+<span class="c1">-- {place_id, game_job_id} or nil</span>
+<span class="c1">-- Set to a session link if a Roblox server is currently the</span>
+<span class="c1">--   owner of this profile; nil if released</span>
+
+<span class="n">Profile</span><span class="p">.</span><span class="n">MetaData</span><span class="p">.</span><span class="n">MetaTags</span> <span class="p">[</span><span class="n">table</span><span class="p">]</span> <span class="p">(</span><span class="n">Writable</span><span class="p">)</span>
+<span class="c1">-- {[&quot;tag_name&quot;] = tag_value, ...}</span>
+<span class="c1">-- Saved and auto-saved just like Profile.Data</span>
+
+<span class="n">Profile</span><span class="p">.</span><span class="n">MetaData</span><span class="p">.</span><span class="n">MetaTagsLatest</span> <span class="p">[</span><span class="n">table</span><span class="p">]</span> <span class="p">(</span><span class="n">Read</span><span class="o">-</span><span class="n">only</span><span class="p">)</span>
+<span class="c1">-- the most recent version of MetaData.MetaTags which has</span>
+<span class="c1">--   been saved to the DataStore during the last auto-save</span>
+<span class="c1">--   or Profile:Save() call</span>
+</code></pre></div>
+
+
+<p><code>Profile.MetaData</code> is a table containing data about the profile itself. <code>Profile.MetaData.MetaTags</code> is saved
+on the same DataStore key together with <code>Profile.Data</code>.</p>
+<h3 id="profileglobalupdates">Profile.GlobalUpdates</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">Profile</span><span class="p">.</span><span class="n">GlobalUpdates</span> <span class="p">[</span><span class="n">GlobalUpdates</span><span class="p">]</span>
+</code></pre></div>
+
+
+<p>This is the <code>GlobalUpdates</code> object tied to this specific <code>Profile</code>. It exposes <code>GlobalUpdates</code> methods for update processing. (See <a href="#global-updates">Global Updates</a> for more info)</p>
+<h3 id="profileisactive">Profile:IsActive()</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">Profile</span><span class="p">:</span><span class="n">IsActive</span><span class="p">()</span> <span class="c1">--&gt; [bool]</span>
+</code></pre></div>
+
+
+<p>Returns <code>true</code> while the profile is session-locked and saving of changes to <code>Profile.Data</code> is guaranteed.</p>
+<h3 id="profilegetmetatag">Profile:GetMetaTag()</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">Profile</span><span class="p">:</span><span class="n">GetMetaTag</span><span class="p">(</span><span class="n">tag_name</span><span class="p">)</span> <span class="c1">--&gt; value</span>
+<span class="c1">-- tag_name   [string]</span>
+</code></pre></div>
+
+
+<p>Equivalent of <code>Profile.MetaData.MetaTags[tag_name]</code>. See <a href="#profilesetmetatag">Profile:SetMetaTag()</a> for more info.</p>
+<h3 id="profilelistentorelease">Profile:ListenToRelease()</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">Profile</span><span class="p">:</span><span class="n">ListenToRelease</span><span class="p">(</span><span class="n">listener</span><span class="p">)</span> <span class="c1">--&gt; [ScriptConnection] (place_id / nil, game_job_id / nil)</span>
+<span class="c1">-- listener   [function](place_id / nil, game_job_id / nil)</span>
+</code></pre></div>
+
+
+<p>Listener functions subscribed to <code>Profile:ListenToRelease()</code> will be called when
+the profile is released remotely (Being <code>"ForceLoad"</code>'ed on a remote server) or
+locally (<code>Profile:Release()</code>). In common practice, the profile will rarely be released before
+the player leaves the game so it's recommended to simply <a href="https://developer.roblox.com/en-us/api-reference/function/Player/Kick">:Kick()</a> the Player when this happens.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>After <code>Profile:ListenToRelease()</code> is triggered, it is too late to change <code>Profile.Data</code> for the final time.
+As long as the profile is active (<code>Profile:IsActive()</code> == <code>true</code>), you should store all profile related data
+immediately after it becomes available. An item trading operation between two profiles must happen without
+any yielding after it is confirmed that both profiles are active.</p>
+</div>
+<h3 id="profilerelease">Profile:Release()</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">Profile</span><span class="p">:</span><span class="n">Release</span><span class="p">()</span>
+</code></pre></div>
+
+
+<p>Removes the session lock for this profile for this Roblox server. Call this method after you're
+done working with the <code>Profile</code> object. Profile data will be immediately saved for the last time.</p>
+<h3 id="profilesetmetatag">Profile:SetMetaTag()</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">Profile</span><span class="p">:</span><span class="n">SetMetaTag</span><span class="p">(</span><span class="n">tag_name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="c1">-- tag_name   [string]</span>
+<span class="c1">-- value      -- Any value supported by DataStore</span>
+</code></pre></div>
+
+
+<p>Equivalent of <code>Profile.MetaData.MetaTags[tag_name] = value</code>. Use for tagging your profile
+with information about itself such as:</p>
+<ul>
+<li><code>profile:SetMetaTag("DataVersion", 1)</code> to let your game code know whether <code>Profile.Data</code> needs to be converted
+after massive changes to the game.</li>
+<li>Anything set through <code>profile:SetMetaTag(tag_name, value)</code> will be available through <code>Profile.MetaData.MetaTagsLatest[tag_name]</code> after an auto-save or a <code>:Save()</code> call - <code>Profile.MetaData.MetaTagsLatest</code> is a version
+of <code>Profile.MetaData.MetaTags</code> that has been successfully saved to the DataStore.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Calling <code>Profile:SetMetaTag()</code> when the <code>Profile</code> is released will throw an error.
+You can check <code>Profile:IsActive()</code> before using this method.</p>
+</div>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p>You can use <code>Profile.MetaData.MetaTagsLatest</code> for product purchase confirmation (By storing <code>receiptInfo.PurchaseId</code> values inside <code>Profile.MetaData.MetaTags</code> and waiting for them to appear in <code>Profile.MetaData.MetaTagsLatest</code>). Don't forget to clear really old <code>PurchaseId</code>'s to stay under DataStore limits.</p>
+</div>
+<h3 id="profilesave">Profile:Save()</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">Profile</span><span class="p">:</span><span class="n">Save</span><span class="p">()</span> <span class="c1">-- Call to quickly progress GlobalUpdates</span>
+<span class="c1">--   state or to speed up save validation processes</span>
+<span class="c1">--   (Does not yield)</span>
+</code></pre></div>
+
+
+<p>Call <code>Profile:Save()</code> to quickly progress <code>GlobalUpdates</code> state or to speed up the propagation of
+<code>Profile.MetaData.MetaTags</code> changes to <code>Profile.MetaData.MetaTagsLatest</code>.</p>
+<p><code>Profile:Save()</code> <strong>should not be called for saving</strong> <code>Profile.Data</code> or <code>Profile.MetaData.MetaTags</code> -
+this is already done for you automatically.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Calling <code>Profile:Save()</code> when the <code>Profile</code> is released will throw an error.
+You can check <code>Profile:IsActive()</code> before using this method.</p>
+</div>
+<h2 id="global-updates">Global Updates</h2>
+<p>Global updates is a powerful feature of ProfileService, used for sending information to a desired player profile across servers, within the server or to a player profile that is not currently active in any Roblox server (Kind of like <a href="https://developer.roblox.com/en-us/api-reference/class/MessagingService">MessagingService</a>, but slower and doesn't require the recipient to be active). The primary intended use of global updates is to support sending gifts among players, or giving items to players through a custom admin tool. The benefit of using global updates is it's API simplicity (This is as simple as it gets, sorry 😂) and the fact that global updates are pulled from the DataStore whenever the profile is auto-saved <strong>at no additional expense of more DataStore calls!</strong></p>
+<p>Global updates can be <code>Active</code>, <code>Locked</code> and <code>Cleared</code>:</p>
+<ul>
+<li>Whenever a global update is created, it will be <code>Active</code> by default</li>
+<li><code>Active</code> updates can be <strong>changed</strong> or <strong>cleared</strong> within a <code>:GlobalUpdateProfileAsync()</code> call</li>
+<li>Normally, when the profile is active on a Roblox server, you should always progress all <code>Active</code> updates to the <code>Locked</code> state</li>
+<li><code>Locked</code> updates can no longer be <strong>changed</strong> or <strong>cleared</strong> within a <code>:GlobalUpdateProfileAsync()</code> call</li>
+<li><code>Locked</code> updates are ready to be processed (e.g., add gift to player inventory) and imediately <code>Locked</code> by calling <code>:LockActiveUpdate(update_id)</code></li>
+<li><code>Cleared</code> updates will immediately disappear from the profile forever</li>
+</ul>
+<h3 id="always-available"><strong><em>Always available</em></strong></h3>
+<h4 id="globalupdatesgetactiveupdates">GlobalUpdates:GetActiveUpdates()</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">GetActiveUpdates</span><span class="p">()</span> <span class="c1">--&gt; [table] { {update_id, update_data}, ...}</span>
+</code></pre></div>
+
+
+<p>Should be used immediately after a <code>Profile</code> is loaded to scan and progress any pending <code>Active</code> updates to <code>Locked</code> state:</p>
+<div class="codehilite"><pre><span></span><code><span class="kr">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">update</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">profile</span><span class="p">.</span><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">GetActiveUpdates</span><span class="p">())</span> <span class="kr">do</span>
+  <span class="n">profile</span><span class="p">.</span><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">LockActiveUpdate</span><span class="p">(</span><span class="n">update</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="kr">end</span>
+</code></pre></div>
+
+
+<h4 id="globalupdatesgetlockedupdates">GlobalUpdates:GetLockedUpdates()</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">GetLockedUpdates</span><span class="p">()</span> <span class="c1">--&gt; [table] { {update_id, update_data}, ...}</span>
+</code></pre></div>
+
+
+<p>Should be used immediately after a <code>Profile</code> is loaded to scan and progress any pending <code>Locked</code> updates to <code>Cleared</code> state:</p>
+<div class="codehilite"><pre><span></span><code><span class="kr">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">update</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">profile</span><span class="p">.</span><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">GetLockedUpdates</span><span class="p">())</span> <span class="kr">do</span>
+  <span class="kd">local</span> <span class="n">update_id</span> <span class="o">=</span> <span class="n">update</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+  <span class="kd">local</span> <span class="n">update_data</span> <span class="o">=</span> <span class="n">update</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+  <span class="kr">if</span> <span class="n">update_data</span><span class="p">.</span><span class="n">Type</span> <span class="o">==</span> <span class="s2">&quot;AdminGift&quot;</span> <span class="ow">and</span> <span class="n">update_data</span><span class="p">.</span><span class="n">Item</span> <span class="o">==</span> <span class="s2">&quot;Coins&quot;</span> <span class="kr">then</span>
+    <span class="n">profile</span><span class="p">.</span><span class="n">Data</span><span class="p">.</span><span class="n">Coins</span> <span class="o">=</span> <span class="n">profile</span><span class="p">.</span><span class="n">Data</span><span class="p">.</span><span class="n">Coins</span> <span class="o">+</span> <span class="n">update_data</span><span class="p">.</span><span class="n">Amount</span>
+  <span class="kr">end</span>
+  <span class="n">profile</span><span class="p">.</span><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">ClearLockedUpdate</span><span class="p">(</span><span class="n">update_id</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div>
+
+
+<h3 id="only-when-accessed-from-profileglobalupdates"><strong><em>Only when accessed from <code>Profile.GlobalUpdates</code></em></strong></h3>
+<h4 id="globalupdateslistentonewactiveupdate">GlobalUpdates:ListenToNewActiveUpdate()</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">ListenToNewActiveUpdate</span><span class="p">(</span><span class="n">listener</span><span class="p">)</span> <span class="c1">--&gt; [ScriptConnection]</span>
+<span class="c1">-- listener   [function](update_id, update_data)</span>
+</code></pre></div>
+
+
+<p>In most games, you should progress all <code>Active</code> updates to <code>Locked</code> state:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">profile</span><span class="p">.</span><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">ListenToNewActiveUpdate</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">update_id</span><span class="p">,</span> <span class="n">update_data</span><span class="p">)</span>
+  <span class="n">profile</span><span class="p">.</span><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">LockActiveUpdate</span><span class="p">(</span><span class="n">update_id</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+</code></pre></div>
+
+
+<h4 id="globalupdateslistentonewlockedupdate">GlobalUpdates:ListenToNewLockedUpdate()</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">ListenToNewLockedUpdate</span><span class="p">(</span><span class="n">listener</span><span class="p">)</span> <span class="c1">--&gt; [ScriptConnection]</span>
+<span class="c1">-- listener   [function](update_id, update_data)</span>
+<span class="c1">-- Must always call GlobalUpdates:ClearLockedUpdate(update_id)</span>
+<span class="c1">--   after processing the locked update.</span>
+</code></pre></div>
+
+
+<p>When you get a <code>Locked</code> update via <code>GlobalUpdates:ListenToNewLockedUpdate()</code>, the update is
+ready to be proccessed and immediately locked:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">profile</span><span class="p">.</span><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">ListenToNewLockedUpdate</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">update_id</span><span class="p">,</span> <span class="n">update_data</span><span class="p">)</span>
+  <span class="kr">if</span> <span class="n">update_data</span><span class="p">.</span><span class="n">Type</span> <span class="o">==</span> <span class="s2">&quot;AdminGift&quot;</span> <span class="ow">and</span> <span class="n">update_data</span><span class="p">.</span><span class="n">Item</span> <span class="o">==</span> <span class="s2">&quot;Coins&quot;</span> <span class="kr">then</span>
+    <span class="n">profile</span><span class="p">.</span><span class="n">Data</span><span class="p">.</span><span class="n">Coins</span> <span class="o">=</span> <span class="n">profile</span><span class="p">.</span><span class="n">Data</span><span class="p">.</span><span class="n">Coins</span> <span class="o">+</span> <span class="n">update_data</span><span class="p">.</span><span class="n">Amount</span>
+  <span class="kr">end</span>
+  <span class="n">profile</span><span class="p">.</span><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">ClearLockedUpdate</span><span class="p">(</span><span class="n">update_id</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+</code></pre></div>
+
+
+<h4 id="globalupdateslockactiveupdate">GlobalUpdates:LockActiveUpdate()</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">LockActiveUpdate</span><span class="p">(</span><span class="n">update_id</span><span class="p">)</span>
+<span class="c1">-- update_id   [number] -- Id of an existing global update</span>
+</code></pre></div>
+
+
+<p>Turns an <code>Active</code> update into a <code>Locked</code> update. Will invoke <code>GlobalUpdates:ListenToNewLockedUpdate()</code> after
+an auto-save (less than 30 seconds) or <code>Profile:Save()</code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Calling <code>GlobalUpdates:LockActiveUpdate()</code> when the <code>Profile</code> is released will throw an error.
+You can check <code>Profile:IsActive()</code> before using this method. ProfileService guarantees that the
+<code>Profile</code> will be active when <code>GlobalUpdates:ListenToNewActiveUpdate()</code> listeners are triggered.</p>
+</div>
+<h4 id="globalupdatesclearlockedupdate">GlobalUpdates:ClearLockedUpdate()</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">ClearLockedUpdate</span><span class="p">(</span><span class="n">update_id</span><span class="p">)</span>
+<span class="c1">-- update_id   [number] -- Id of an existing global update</span>
+</code></pre></div>
+
+
+<p>Clears a <code>Locked</code> update completely from the profile.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Calling <code>GlobalUpdates:ClearLockedUpdate()</code> when the <code>Profile</code> is released will throw an error.
+You can check <code>Profile:IsActive()</code> before using this method. ProfileService guarantees that the
+<code>Profile</code> will be active when <code>GlobalUpdates:ListenToNewLockedUpdate()</code> listeners are triggered.</p>
+</div>
+<h3 id="available-inside-update_handler-during-a-profilestoreglobalupdateprofileasync-call"><strong><em>Available inside <code>update_handler</code> during a <code>ProfileStore:GlobalUpdateProfileAsync()</code> call</em></strong></h3>
+<h4 id="globalupdatesaddactiveupdate">GlobalUpdates:AddActiveUpdate()</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">AddActiveUpdate</span><span class="p">(</span><span class="n">update_data</span><span class="p">)</span>
+<span class="c1">-- update_data   [table] -- Your custom global update data</span>
+</code></pre></div>
+
+
+<p>Used to send a new <code>Active</code> update to the profile.</p>
+<h4 id="globalupdateschangeactiveupdate">GlobalUpdates:ChangeActiveUpdate()</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">ChangeActiveUpdate</span><span class="p">(</span><span class="n">update_id</span><span class="p">,</span> <span class="n">update_data</span><span class="p">)</span>
+<span class="c1">-- update_id     [number] -- Id of an existing global update</span>
+<span class="c1">-- update_data   [table] -- New data that replaces previously set update_data</span>
+</code></pre></div>
+
+
+<p>Changing <code>Active</code> updates can be used for stacking player gifts, particularly when
+lots of players can be sending lots of gifts to a Youtube celebrity so the <code>Profile</code> would not
+exceed the <a href="https://developer.roblox.com/en-us/articles/Datastore-Errors#data-limits">DataStore data limit</a>.</p>
+<h4 id="globalupdatesclearactiveupdate">GlobalUpdates:ClearActiveUpdate()</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">GlobalUpdates</span><span class="p">:</span><span class="n">ClearActiveUpdate</span><span class="p">(</span><span class="n">update_id</span><span class="p">)</span>
+<span class="c1">-- update_id   [number] -- Id of an existing global update</span>
+</code></pre></div>
+
+
+<p>Removes an <code>Active</code> update from the profile completely.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../troubleshooting/" title="Troubleshooting" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Troubleshooting
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.df0def68.min.js"></script>
+      <script src="../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.fae956e7.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
